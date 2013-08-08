@@ -1,0 +1,14 @@
+<configuration name="logfile.conf">
+  <profiles>
+    <profile name="default">
+      <settings>
+        <param name="logfile" value="log/freeswitch.log"/>
+        <param name="rollover" value="0"/>
+        <param name="uuid" value="true"/>
+      </settings>
+      <mappings>
+        <map name="all" value="debug,info,notice,warning,err,crit,alert"/>
+      </mappings>
+    </profile>
+  </profiles>
+</configuration>

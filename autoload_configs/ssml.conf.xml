@@ -1,0 +1,5 @@
+<configuration name="ssml.conf">
+  <tts-voices>
+    <voice name="kal" language="en-US" gender="male" prefix="tts://flite|kal|"/>
+  </tts-voices>
+</configuration>
