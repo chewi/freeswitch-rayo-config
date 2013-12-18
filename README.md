@@ -23,7 +23,7 @@ My configuration lives under version control and this gets checked out onto diff
 
 ### ssml.conf.xml
 
-If you don't use TTS then you shouldn't need anything in this file but as of FreeSWITCH 1.2.12, at least one voice must be defined in order for audio files to work. A bug report will be filed. If you do use TTS then check out conf/rayo/autoload\_configs/ssml.conf.xml from the FreeSWITCH sources. Don't forget to load mod\_flite.
+If you don't use TTS then you don't need anything in this file. Otherwise check out conf/rayo/autoload\_configs/ssml.conf.xml from the FreeSWITCH sources. Don't forget to load mod\_flite.
 
 Launching
 ---------
