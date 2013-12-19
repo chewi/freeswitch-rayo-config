@@ -1,4 +1,7 @@
 <configuration name="rayo.conf">
+  <settings>
+    <param name="max-idle-sec" value="300"/>
+  </settings>
   <domain name="localhost" shared-secret="itsasecret">
     <listen type="c2s" port="5222" address="127.0.0.1" acl=""/>
     <users><user name="adhearsion" password="barfoo"/></users>

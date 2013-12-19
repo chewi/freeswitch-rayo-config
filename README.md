@@ -25,6 +25,10 @@ My configuration lives under version control and this gets checked out onto diff
 
 If you don't use TTS then you don't need anything in this file. Otherwise check out conf/rayo/autoload\_configs/ssml.conf.xml from the FreeSWITCH sources. Don't forget to load mod\_flite.
 
+### rayo.conf.xml
+
+max-idle-sec is used to kill off calls that haven't terminated properly. It kicks in when there has been no Rayo activity for a given length of time. The default is 30 seconds, which is probably too short if callers need to wait for others to answer. Being on hold counts as idle activity, even if there is music playing in the background. I have therefore set this to 5 minutes instead.
+
 Launching
 ---------
 
