@@ -16,6 +16,7 @@
 
         <param name="context" value="default"/>
         <param name="disable-register" value="true"/>
+        <param name="rtp-timer-name" value="soft"/>
       </settings>
 
       <gateways>
@@ -39,6 +40,7 @@
 
         <param name="context" value="default"/>
         <param name="disable-register" value="true"/>
+        <param name="rtp-timer-name" value="soft"/>
       </settings>
     </profile>
 
@@ -58,6 +60,7 @@
 
         <param name="context" value="default"/>
         <param name="disable-register" value="true"/>
+        <param name="rtp-timer-name" value="soft"/>
       </settings>
     </profile>
   </profiles>

@@ -13,6 +13,8 @@ Notes
 
 The conventional approach is to have an internal and external profile. I have split the internal profile into lan and localhost because I do isolated load testing while off the network. This is necessary because a single profile cannot listen on more than one IP address and port number pair.
 
+The rtp-timer-name parameter is not documented anywhere so I will take the opportunity to do so here. The developer of mod\_rayo says that FreeSWITCH will block if it does not receive RTP traffic unless soft timers are enabled. This will cause problems for mod\_rayo as well as SIPp. For some silly reason, the internal code default is "none" even though the default configuration sets it to "soft".
+
 ### Log levels
 
 Log levels in FreeSWITCH can be a little confusing. The loglevel setting in switch.conf.xml dictates the overall log level used by the daemon and the log file. The loglevel setting in console.conf.xml only affects what is seen in the console. It is important to note that the console will only ever see log levels that the daemon itself uses. For example, if the switch.conf.xml loglevel is crit but the console.conf.xml loglevel is info, the console will only see crit and alert messages.
