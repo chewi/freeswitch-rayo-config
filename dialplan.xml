@@ -1,8 +1,8 @@
 <include>
   <context name="default">
     <extension name="adhearsion">
-      <condition field="destination_number" expression=".*$">
-        <action application="rayo" data=""/>
+      <condition>
+        <action application="rayo"/>
       </condition>
     </extension>
   </context>
