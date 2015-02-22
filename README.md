@@ -53,6 +53,7 @@ Configure Adhearsion in the same way that you would configure Voxeo PRISM. Do no
     config.punchblock.platform = :xmpp
     config.punchblock.username = "adhearsion@localhost/#{::Process.pid}"
     config.punchblock.password = "barfoo"
+    config.punchblock.host     = "localhost" # or the ip/domain of your freeswitch server
 
 Author
 ------
