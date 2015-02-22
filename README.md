@@ -36,7 +36,7 @@ Launching
 
 I run FreeSWITCH as the same user that runs Adhearsion and Rails. All three are started using [god](https://github.com/mojombo/god). The FreeSWITCH configuration, database, log, and PID file all live under the Adhearsion + Rails project directory tree. The command used to start it looks something like this.
 
-    freeswitch -ncwait -nonat -conf config/freeswitch -db db/databases -log log -run tmp/pids
+    EXTERNAL_IP=123.123.123.123 freeswitch -ncwait -nonat -conf config/freeswitch -db db/databases -log log -run tmp/pids
 
 Console
 -------
